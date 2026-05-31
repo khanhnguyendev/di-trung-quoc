@@ -64,7 +64,7 @@ export default function ShenzhenPlacesPage() {
                       </p>
                     )}
                     <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                      href={`https://maps.apple.com/?q=${encodeURIComponent(place.name)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs text-blue-600 dark:text-blue-400 hover:underline mt-2"
