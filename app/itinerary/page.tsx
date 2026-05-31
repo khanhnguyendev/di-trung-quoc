@@ -79,7 +79,14 @@ export default function ItineraryPage() {
                           <span className="text-sm font-medium text-zinc-900 dark:text-white">{slot.title}</span>
                           <span className="text-xs text-zinc-400 shrink-0">{slot.time}</span>
                         </div>
-                        <p className="text-xs text-zinc-500 mt-0.5">📍 {slot.location}</p>
+                        <a
+                          href={`https://maps.apple.com/?q=${encodeURIComponent(slot.location)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-zinc-500 mt-0.5 hover:text-blue-500 dark:hover:text-blue-400 transition-colors block"
+                        >
+                          📍 {slot.location}
+                        </a>
                         {slot.price && (
                           <span className="text-xs text-green-600 dark:text-green-400 mt-0.5 block">💰 {slot.price}</span>
                         )}
