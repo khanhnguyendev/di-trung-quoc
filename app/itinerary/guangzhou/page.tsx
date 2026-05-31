@@ -71,13 +71,14 @@ export default function GuangzhouItineraryPage() {
                           <h3 className="font-medium text-zinc-900 dark:text-white text-sm">{slot.title}</h3>
                           <span className="text-xs text-zinc-400 shrink-0 font-mono">{slot.time}</span>
                         </div>
+                        <p className="text-xs text-zinc-500 mb-1">📍 {slot.location}</p>
                         <a
                           href={`https://maps.apple.com/?q=${encodeURIComponent(slot.location)}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs text-zinc-500 mb-2 hover:text-blue-500 dark:hover:text-blue-400 transition-colors block"
+                          className="inline-flex items-center gap-1 text-xs text-blue-600 dark:text-blue-400 hover:underline mb-2"
                         >
-                          📍 {slot.location}
+                          🗺️ Mở bản đồ
                         </a>
                         {slot.notes && (
                           <p className="text-xs text-zinc-600 dark:text-zinc-400 mb-2">{slot.notes}</p>
