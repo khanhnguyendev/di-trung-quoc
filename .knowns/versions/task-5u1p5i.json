@@ -1,0 +1,197 @@
+{
+  "taskId": "5u1p5i",
+  "currentVersion": 3,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "5u1p5i",
+      "version": 1,
+      "timestamp": "2026-05-31T06:42:04.616109Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "in-progress"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "high"
+        }
+      ],
+      "snapshot": {
+        "description": "Turn the China trip CSV data into a Next.js 16 web app deployable on Vercel. App helps users interactively explore day-by-day itinerary, tips (payment, transport, apps), and trip logistics for Guangzhou + Shenzhen. No auth required. MongoDB available if needed.",
+        "labels": [
+          "nextjs",
+          "vercel",
+          "travel-guide"
+        ],
+        "priority": "high",
+        "status": "in-progress",
+        "title": "Build Next.js 16 interactive travel guide — Guangzhou + Shenzhen trip"
+      }
+    },
+    {
+      "id": "v2",
+      "taskId": "5u1p5i",
+      "version": 2,
+      "timestamp": "2026-05-31T06:42:33.947621Z",
+      "changes": [
+        {
+          "field": "acceptanceCriteria",
+          "oldValue": null,
+          "newValue": [
+            {
+              "completed": false,
+              "text": "Next.js 16 app scaffolded with TypeScript + Tailwind + App Router"
+            },
+            {
+              "completed": false,
+              "text": "CSV data parsed into typed TypeScript data file"
+            },
+            {
+              "completed": false,
+              "text": "All 3 main sections navigable: Home / Itinerary / Tips"
+            },
+            {
+              "completed": false,
+              "text": "Itinerary shows day-by-day breakdown per city"
+            },
+            {
+              "completed": false,
+              "text": "Tips section covers payment (Alipay steps), transport, apps"
+            },
+            {
+              "completed": false,
+              "text": "MongoDB connection util exists and is importable but not active"
+            },
+            {
+              "completed": false,
+              "text": "App deploys to Vercel with zero config changes"
+            },
+            {
+              "completed": false,
+              "text": "Mobile-responsive layout"
+            }
+          ]
+        },
+        {
+          "field": "implementationPlan",
+          "oldValue": null,
+          "newValue": "1. Scaffold Next.js 16 project — `create-next-app` with TypeScript, Tailwind CSS, App Router, ESLint in repo root\n2. Parse CSV → typed static data — create `data/trip.ts` with trip overview, itinerary by city/day, tips (payment/transport/apps), references\n3. Build root layout + nav — responsive shell, Vietnamese-first, mobile-friendly (sidebar on desktop, bottom nav on mobile)\n4. Home page (`/`) — trip overview card: cities, dates, group size, summary text, quick-nav to sections\n5. Itinerary pages (`/itinerary`, `/itinerary/guangzhou`, `/itinerary/shenzhen`) — day-by-day timeline UI with activities, transport notes, highlights\n6. Tips section (`/tips`, `/tips/payment`, `/tips/transport`, `/tips/apps`) — card/accordion layout per category; Alipay setup steps, transport options table, app install checklist\n7. MongoDB infrastructure — `lib/mongodb.ts` connection util + env var template `.env.local.example`; not wired to any page yet, ready to activate\n8. Vercel deployment config — `next.config.ts`, `vercel.json` if needed, `.env.local.example` with all env vars documented"
+        }
+      ],
+      "snapshot": {
+        "acceptanceCriteria": [
+          {
+            "completed": false,
+            "text": "Next.js 16 app scaffolded with TypeScript + Tailwind + App Router"
+          },
+          {
+            "completed": false,
+            "text": "CSV data parsed into typed TypeScript data file"
+          },
+          {
+            "completed": false,
+            "text": "All 3 main sections navigable: Home / Itinerary / Tips"
+          },
+          {
+            "completed": false,
+            "text": "Itinerary shows day-by-day breakdown per city"
+          },
+          {
+            "completed": false,
+            "text": "Tips section covers payment (Alipay steps), transport, apps"
+          },
+          {
+            "completed": false,
+            "text": "MongoDB connection util exists and is importable but not active"
+          },
+          {
+            "completed": false,
+            "text": "App deploys to Vercel with zero config changes"
+          },
+          {
+            "completed": false,
+            "text": "Mobile-responsive layout"
+          }
+        ],
+        "description": "Turn the China trip CSV data into a Next.js 16 web app deployable on Vercel. App helps users interactively explore day-by-day itinerary, tips (payment, transport, apps), and trip logistics for Guangzhou + Shenzhen. No auth required. MongoDB available if needed.",
+        "implementationPlan": "1. Scaffold Next.js 16 project — `create-next-app` with TypeScript, Tailwind CSS, App Router, ESLint in repo root\n2. Parse CSV → typed static data — create `data/trip.ts` with trip overview, itinerary by city/day, tips (payment/transport/apps), references\n3. Build root layout + nav — responsive shell, Vietnamese-first, mobile-friendly (sidebar on desktop, bottom nav on mobile)\n4. Home page (`/`) — trip overview card: cities, dates, group size, summary text, quick-nav to sections\n5. Itinerary pages (`/itinerary`, `/itinerary/guangzhou`, `/itinerary/shenzhen`) — day-by-day timeline UI with activities, transport notes, highlights\n6. Tips section (`/tips`, `/tips/payment`, `/tips/transport`, `/tips/apps`) — card/accordion layout per category; Alipay setup steps, transport options table, app install checklist\n7. MongoDB infrastructure — `lib/mongodb.ts` connection util + env var template `.env.local.example`; not wired to any page yet, ready to activate\n8. Vercel deployment config — `next.config.ts`, `vercel.json` if needed, `.env.local.example` with all env vars documented",
+        "labels": [
+          "nextjs",
+          "vercel",
+          "travel-guide"
+        ],
+        "priority": "high",
+        "status": "in-progress",
+        "title": "Build Next.js 16 interactive travel guide — Guangzhou + Shenzhen trip"
+      }
+    },
+    {
+      "id": "v3",
+      "taskId": "5u1p5i",
+      "version": 3,
+      "timestamp": "2026-05-31T06:53:08.987889Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": "in-progress",
+          "newValue": "done"
+        },
+        {
+          "field": "implementationNotes",
+          "oldValue": null,
+          "newValue": "Build clean: 9 routes all static. Next.js 16.2.6, TypeScript, Tailwind v4, App Router. MongoDB util in lib/mongodb.ts (inactive). All pages: /, /itinerary, /itinerary/guangzhou, /itinerary/shenzhen, /tips, /tips/payment, /tips/transport, /tips/apps."
+        }
+      ],
+      "snapshot": {
+        "acceptanceCriteria": [
+          {
+            "text": "Next.js 16 app scaffolded with TypeScript + Tailwind + App Router",
+            "completed": true
+          },
+          {
+            "text": "CSV data parsed into typed TypeScript data file",
+            "completed": true
+          },
+          {
+            "text": "All 3 main sections navigable: Home / Itinerary / Tips",
+            "completed": true
+          },
+          {
+            "text": "Itinerary shows day-by-day breakdown per city",
+            "completed": true
+          },
+          {
+            "text": "Tips section covers payment (Alipay steps), transport, apps",
+            "completed": true
+          },
+          {
+            "text": "MongoDB connection util exists and is importable but not active",
+            "completed": true
+          },
+          {
+            "text": "App deploys to Vercel with zero config changes",
+            "completed": true
+          },
+          {
+            "text": "Mobile-responsive layout",
+            "completed": true
+          }
+        ],
+        "description": "Turn the China trip CSV data into a Next.js 16 web app deployable on Vercel. App helps users interactively explore day-by-day itinerary, tips (payment, transport, apps), and trip logistics for Guangzhou + Shenzhen. No auth required. MongoDB available if needed.",
+        "implementationNotes": "Build clean: 9 routes all static. Next.js 16.2.6, TypeScript, Tailwind v4, App Router. MongoDB util in lib/mongodb.ts (inactive). All pages: /, /itinerary, /itinerary/guangzhou, /itinerary/shenzhen, /tips, /tips/payment, /tips/transport, /tips/apps.",
+        "implementationPlan": "1. Scaffold Next.js 16 project — `create-next-app` with TypeScript, Tailwind CSS, App Router, ESLint in repo root\n2. Parse CSV → typed static data — create `data/trip.ts` with trip overview, itinerary by city/day, tips (payment/transport/apps), references\n3. Build root layout + nav — responsive shell, Vietnamese-first, mobile-friendly (sidebar on desktop, bottom nav on mobile)\n4. Home page (`/`) — trip overview card: cities, dates, group size, summary text, quick-nav to sections\n5. Itinerary pages (`/itinerary`, `/itinerary/guangzhou`, `/itinerary/shenzhen`) — day-by-day timeline UI with activities, transport notes, highlights\n6. Tips section (`/tips`, `/tips/payment`, `/tips/transport`, `/tips/apps`) — card/accordion layout per category; Alipay setup steps, transport options table, app install checklist\n7. MongoDB infrastructure — `lib/mongodb.ts` connection util + env var template `.env.local.example`; not wired to any page yet, ready to activate\n8. Vercel deployment config — `next.config.ts`, `vercel.json` if needed, `.env.local.example` with all env vars documented",
+        "labels": [
+          "nextjs",
+          "vercel",
+          "travel-guide"
+        ],
+        "priority": "high",
+        "status": "done",
+        "title": "Build Next.js 16 interactive travel guide — Guangzhou + Shenzhen trip"
+      }
+    }
+  ]
+}
