@@ -103,6 +103,14 @@ export default function HotelsPage() {
                   </div>
 
                   <p className="text-xs text-zinc-400 mt-3">{hotel.address}</p>
+                  <a
+                    href={`https://maps.apple.com/?q=${encodeURIComponent(hotel.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-blue-600 dark:text-blue-400 hover:underline mt-2"
+                  >
+                    🗺️ Mở bản đồ
+                  </a>
                 </div>
               ))}
             </div>
