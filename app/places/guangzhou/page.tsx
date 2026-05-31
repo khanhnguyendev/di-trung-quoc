@@ -29,8 +29,21 @@ export default function GuangzhouPlacesPage() {
         <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2">{cityInfo.food}</p>
       </div>
 
+      {/* Anchor nav */}
+      <div className="flex flex-wrap gap-2 mb-6">
+        {Object.keys(byType).map((cat) => (
+          <a
+            key={cat}
+            href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
+            className="text-xs px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-red-300 dark:hover:border-red-700 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+          >
+            {cat}
+          </a>
+        ))}
+      </div>
+
       {Object.entries(byType).map(([cat, items]) => (
-        <section key={cat} className="mb-8">
+        <section key={cat} id={cat.toLowerCase().replace(/\s+/g, '-')} className="mb-8">
           <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wide mb-3">{cat}</h2>
           <div className="flex flex-col gap-3">
             {items.map((place) => (
