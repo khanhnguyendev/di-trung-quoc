@@ -63,6 +63,14 @@ export default function ShenzhenPlacesPage() {
                         💡 {place.note}
                       </p>
                     )}
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-blue-600 dark:text-blue-400 hover:underline mt-2"
+                    >
+                      🗺️ Xem trên bản đồ
+                    </a>
                   </div>
                 </div>
               </div>
